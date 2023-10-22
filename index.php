@@ -44,25 +44,35 @@
     </script>
   </head>
   <body>
-    <div class="container mt-5 d-flex align-items-center">
-        <di v class="row align-items-center">
-            <div class="form-check form-switch mb-2 ">
-                <input class="form-check-input" type="checkbox" id="btnSwitch">
-                <label class="form-check-label" for="btnSwitch">Dark Mode</label>
-            </div>
-            <h1>Projeto WEB</h1>
-            <h2>Redes de Computadores</h2>
-
-            <div class="card w-50 mt-4">
-                <div class="card-body">
-                    <p class="fw-bold">Informações</p>
-                    <p id="ip"> IP: <?php echo   $ip; ?></p>
-                    <p id="data">Data: <?php echo $data; ?></p>    
-                    <p id="hora">Hora: <?php echo $horario; ?></p>
-                    <p id="hora">Local: <?php echo $pais; ?></p>
+    <div class="mt-3 d-flex justify-content-center">
+        <div class="row justify-content-left align-items-left mx-auto">
+               <div class="form-check form-switch mx-auto text-left">
+                        <input class="form-check-input mx-auto" type="checkbox" id="btnSwitch">
+                        <label class="form-check-label text-left" for="btnSwitch">Dark Mode</label>
                 </div>
+        </div>
+    </div>
+    <div class="mt-3 d-flex justify-content-center vh-90">
+        <div class="row justify-content-center align-items-center mx-auto">
+            <div class="col mx-auto text-center">
+                <h1 class="mt-5">🌐️ Projeto WEB</h1>
+                <h2 class="mt-3">Redes de Computadores</h2>
+                <br/>       
+                <div class="card mt-4 mx-auto">
+                    <div class="card-body">
+                        <p class="fw-bold">Informações</p>
+                        <p id="ip"> IP: <?php echo   $ip; ?></p>
+                        <p id="data">Data: <?php echo $data; ?></p>    
+                        <p id="hora">Hora: <?php echo $horario; ?></p>
+                        <p id="hora">Local: <?php echo $pais; ?></p>
+                    </div>
+                </div>
+                <br/>
+                <br/>
+                <p class="mt-4 pt-4 fs-6">Yasmin Beatriz Deodato - 2sem/2023 - ICT Unifesp</p>
+                
             </div>
-        </div>        
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>

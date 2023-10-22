@@ -22,20 +22,26 @@ ifconfig
 ```
 
 ## Passo 2
-Acessar endereço do roteador da rede no navegador (http://192.168.15.1/, no caso da Vivo) e fazer o login.
+Acessar endereço do roteador da rede no navegador (http://192.168.15.1/, no caso da Vivo) e fazer o login com as credenciais do administrador do roteador.
 
 ## Passo 3
-Procurar pela seção **Encaminhamento de Porta** e incluir uma nova regra. É preciso se atentar aos campos:
+Procurar pela seção **Encaminhamento de Porta** e incluir uma nova regra.
+No caso da Provedor Vivo, temos uma tela parecida com essa:
+![Configuração Porta](/images/image04.png)
+
+ É preciso se atentar aos campos:
 
 
 | Campo | Descrição | Valor |
 | :-----: | :----------: | :-------: |
 | Porta de Origem | A porta que você deseja usar para acessar o servidor Apache no outro dispositivo | 8080 |
 | IP de Destino | O endereço IP local do computador com a aplicação. | 192.168.15.51 |
-| Porta de Destino | A porta em que o Servidor Apache está ouvindo | 80 |
+| Porta de Destino | A porta em que o Servidor Apache está ouvindo | 8080 |
 | Protocolo | Protocolo usado | TCP | 
 
 Salve a nova regra de Encaminhamento de Porta.
 
 ## Passo 4
 A partir de outro dispositivo, diferente do servidor, mas conectado a mesma rede, acesse o endereço especificado no passo anterior e visualize a aplicação. Demonstração:
+No celular, a url acessada é: `http://192.168.15.51/aplicacao/`
+![Visualização da Aplicação em dispositivos da mesma rede](/images/image05.png)
