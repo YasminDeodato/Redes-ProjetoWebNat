@@ -42,6 +42,4 @@ No caso da Provedor Vivo, temos uma tela parecida com essa:
 Salve a nova regra de Encaminhamento de Porta.
 
 ## Passo 4
-A partir de outro dispositivo, diferente do servidor, mas conectado a mesma rede, acesse o endereço especificado no passo anterior e visualize a aplicação. Demonstração:
-No celular, a url acessada é: `http://192.168.15.51/aplicacao/`
-![Visualização da Aplicação em dispositivos da mesma rede](/images/image05.png)
+Agora basta descobrir qual é o IP público do seu roteador, para isso, é possível utilizar o site [https://www.whatismyip.com/](https://www.whatismyip.com/) e verificar o endereço de IP público. A partir de outro dispositivo conectado em outra rede, abra o navegador digite o endereço do IP público com a respectiva porta indicada anteriormente e você poderá visualizar a aplicação web. 
